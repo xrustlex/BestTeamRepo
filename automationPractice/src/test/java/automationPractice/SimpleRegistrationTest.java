@@ -4,10 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class SimpleRegistration {
+public class SimpleRegistrationTest {
 
 	@Test
-	public void canRegisterSimple() {
+	public void test() {
 		fail("Not yet implemented");
 	}
+
 }
