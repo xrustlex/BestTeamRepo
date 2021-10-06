@@ -15,9 +15,7 @@ public class LoginTest {
 	@Test
 	public void canLoginTest() {
 		
-		String projectPath = System.getProperty("user.dir");
-		System.out.println(projectPath);
-		
+		String projectPath = System.getProperty("user.dir");		
 		System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/chromedriver");	
 		System.setProperty("webdriver.edge.driver", projectPath + "/src/test/resources/msedgedriver");
 		
