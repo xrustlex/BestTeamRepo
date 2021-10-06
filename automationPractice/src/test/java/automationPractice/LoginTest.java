@@ -32,6 +32,7 @@ public class LoginTest {
 		driver = new SafariDriver();
 		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com");
+		driver.close();
 		
 	}
 }
