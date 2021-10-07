@@ -30,7 +30,7 @@ public class LoginTest {
 
 		WebElement signInLink = driver.findElement(By.cssSelector("a[class='login']"));
 		signInLink.click();
-		WebElement emailBox = driver.findElement(By.cssSelector("body[id='authentication']"));
+		WebElement emailBox = driver.findElement(By.cssSelector("input[name='email']"));
 		emailBox.sendKeys(testEmail);
 		WebElement passwordBox = driver.findElement(By.cssSelector("input[name='passwrd']"));
 		passwordBox.sendKeys(testPaswd);
@@ -40,16 +40,38 @@ public class LoginTest {
 
 		driver.close();
 
-		/*
+
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com");
-		driver.close();
+
+		signInLink = driver.findElement(By.cssSelector("a[class='login']"));
+		signInLink.click();
+		emailBox = driver.findElement(By.cssSelector("input[name='email']"));
+		emailBox.sendKeys(testEmail);
+		passwordBox = driver.findElement(By.cssSelector("input[name='passwrd']"));
+		passwordBox.sendKeys(testPaswd);
+		passwordBox.sendKeys(Keys.ENTER);
+
+		Assert.assertEquals(driver.getCurrentUrl(), "http://automationpractice.com/index.php?controller=my-account");
+
+		driver.close()
 
 		driver = new SafariDriver();
 		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com");
+
+		signInLink = driver.findElement(By.cssSelector("a[class='login']"));
+		signInLink.click();
+		emailBox = driver.findElement(By.cssSelector("input[name='email']"));
+		emailBox.sendKeys(testEmail);
+		passwordBox = driver.findElement(By.cssSelector("input[name='passwrd']"));
+		passwordBox.sendKeys(testPaswd);
+		passwordBox.sendKeys(Keys.ENTER);
+
+		Assert.assertEquals(driver.getCurrentUrl(), "http://automationpractice.com/index.php?controller=my-account");
+
 		driver.close();
-		 */
+
 	}
 }
