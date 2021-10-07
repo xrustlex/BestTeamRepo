@@ -1,9 +1,5 @@
 package automationPractice;
 
-import static org.junit.Assert.*;
-
-import java.io.File;
-
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
