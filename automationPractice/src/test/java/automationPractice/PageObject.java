@@ -25,4 +25,5 @@ public abstract class PageObject {
 		JavascriptExecutor js = (JavascriptExecutor) this.driver;  
 		return js.executeScript(script, arguments);
 	}
+	
 }

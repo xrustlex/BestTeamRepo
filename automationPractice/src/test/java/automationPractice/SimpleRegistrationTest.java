@@ -15,5 +15,4 @@ public class SimpleRegistrationTest extends automationPracticeTestBase {
 				.ClickSignIn()
 				.ClickCreateAnAccount();		
 	}
-
 }

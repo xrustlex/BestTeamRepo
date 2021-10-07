@@ -20,4 +20,5 @@ public class HomePageAutomation extends PageObject {
 		
 		return new AuthenticationPage(this.driver, this.baseUrl);
 	}
+	
 }

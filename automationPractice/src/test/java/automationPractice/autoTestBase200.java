@@ -29,5 +29,4 @@ public abstract class autoTestBase200 {
 		driver.manage().window().maximize();
 		driver.navigate().to(this.baseUrl);		
 	}
-	
 }
