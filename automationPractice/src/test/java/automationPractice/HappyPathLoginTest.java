@@ -11,7 +11,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import junit.framework.Assert;
 
-public class LoginTest {
+public class HappyPathLoginTest {
 
 	@Test
 	public void canLoginTest() {
@@ -20,58 +20,50 @@ public class LoginTest {
 		String testPaswd = "monster90";
 		String projectPath = System.getProperty("user.dir");		
 		System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/mac/chromedriver");	
-		System.setProperty("webdriver.edge.driver", projectPath + "/src/test/resources/mac/msedgedriver");
+		System.setProperty("webdriver.edge.driver",   projectPath + "/src/test/resources/mac/msedgedriver");
 		System.setProperty("webdriver.safari.driver", projectPath + "/src/test/resources/mac/msedgedriver");
 
+		//Chrome run
 		WebDriver driver = new ChromeDriver();
-
 		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com");
-
 		WebElement signInLink = driver.findElement(By.cssSelector("a[class='login']"));
 		signInLink.click();
-		WebElement emailBox = driver.findElement(By.cssSelector("input[name='email']"));
+		WebElement emailBox = driver.findElement(By.cssSelector("input#email"));
 		emailBox.sendKeys(testEmail);
-		WebElement passwordBox = driver.findElement(By.cssSelector("input[name='passwrd']"));
+		WebElement passwordBox = driver.findElement(By.cssSelector("input#passwd"));
 		passwordBox.sendKeys(testPaswd);
 		passwordBox.sendKeys(Keys.ENTER);
-
 		Assert.assertEquals(driver.getCurrentUrl(), "http://automationpractice.com/index.php?controller=my-account");
-
 		driver.close();
 
-
+		/*Edge run
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com");
-
 		signInLink = driver.findElement(By.cssSelector("a[class='login']"));
 		signInLink.click();
-		emailBox = driver.findElement(By.cssSelector("input[name='email']"));
+		emailBox = driver.findElement(By.cssSelector("input#email"));
 		emailBox.sendKeys(testEmail);
-		passwordBox = driver.findElement(By.cssSelector("input[name='passwrd']"));
+		passwordBox = driver.findElement(By.cssSelector("input[id='passwd']"));
 		passwordBox.sendKeys(testPaswd);
 		passwordBox.sendKeys(Keys.ENTER);
-
 		Assert.assertEquals(driver.getCurrentUrl(), "http://automationpractice.com/index.php?controller=my-account");
-
-		driver.close()
-
+		driver.close();
+		
+		/*Safari run
 		driver = new SafariDriver();
 		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com");
-
 		signInLink = driver.findElement(By.cssSelector("a[class='login']"));
 		signInLink.click();
-		emailBox = driver.findElement(By.cssSelector("input[name='email']"));
+		emailBox = driver.findElement(By.cssSelector("input#email"));
 		emailBox.sendKeys(testEmail);
-		passwordBox = driver.findElement(By.cssSelector("input[name='passwrd']"));
+		passwordBox = driver.findElement(By.cssSelector("input#passwd"));
 		passwordBox.sendKeys(testPaswd);
 		passwordBox.sendKeys(Keys.ENTER);
-
 		Assert.assertEquals(driver.getCurrentUrl(), "http://automationpractice.com/index.php?controller=my-account");
-
 		driver.close();
-
+		 */
 	}
 }
