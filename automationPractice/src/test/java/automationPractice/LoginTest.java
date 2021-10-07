@@ -15,7 +15,7 @@ public class LoginTest {
 
 	@Test
 	public void canLoginTest() {
-		
+
 		String testEmail = "alexanderjosh009@gmail.com";
 		String testPaswd = "monster90";
 		String projectPath = System.getProperty("user.dir");		
@@ -24,32 +24,32 @@ public class LoginTest {
 		System.setProperty("webdriver.safari.driver", projectPath + "/src/test/resources/mac/msedgedriver");
 
 		WebDriver driver = new ChromeDriver();
-		
+
 		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com");
-		
+
 		WebElement signInLink = driver.findElement(By.cssSelector("a[class='login']"));
 		signInLink.click();
 		WebElement emailBox = driver.findElement(By.cssSelector("body[id='authentication']"));
 		emailBox.sendKeys(testEmail);
-		WebElement passwordBox = driver.findElement(By.cssSelector("input[class='is_required validate account_input form-control']"));
+		WebElement passwordBox = driver.findElement(By.cssSelector("input[name='passwrd']"));
 		passwordBox.sendKeys(testPaswd);
 		passwordBox.sendKeys(Keys.ENTER);
-		
+
 		Assert.assertEquals(driver.getCurrentUrl(), "http://automationpractice.com/index.php?controller=my-account");
-		
+
 		driver.close();
-		
+
 		/*
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com");
 		driver.close();
-		
+
 		driver = new SafariDriver();
 		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com");
 		driver.close();
-		*/
+		 */
 	}
 }
