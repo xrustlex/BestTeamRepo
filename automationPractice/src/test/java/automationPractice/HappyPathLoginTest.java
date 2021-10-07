@@ -20,7 +20,7 @@ public class HappyPathLoginTest {
 		String testPaswd = "monster90";
 		String projectPath = System.getProperty("user.dir");		
 		System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/mac/chromedriver");	
-		System.setProperty("webdriver.edge.driver", projectPath + "/src/test/resources/mac/msedgedriver");
+		System.setProperty("webdriver.edge.driver",   projectPath + "/src/test/resources/mac/msedgedriver");
 		System.setProperty("webdriver.safari.driver", projectPath + "/src/test/resources/mac/msedgedriver");
 
 		//Chrome run
