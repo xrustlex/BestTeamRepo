@@ -30,7 +30,7 @@ public class LoginTest {
 
 		WebElement signInLink = driver.findElement(By.cssSelector("a[class='login']"));
 		signInLink.click();
-		WebElement emailBox = driver.findElement(By.cssSelector("body[id='authentication']"));
+		WebElement emailBox = driver.findElement(By.cssSelector("input[name='email']"));
 		emailBox.sendKeys(testEmail);
 		WebElement passwordBox = driver.findElement(By.cssSelector("input[name='passwrd']"));
 		passwordBox.sendKeys(testPaswd);
