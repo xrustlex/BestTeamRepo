@@ -23,5 +23,4 @@ public class AuthenticationPage extends PageObject{
 		
 		return new CreateAccountPage(this.driver, this.baseUrl);
 	}
-
 }

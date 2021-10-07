@@ -30,11 +30,4 @@ public class CreateAccountPage extends PageObject{
 		phoneNumberTextField.sendKeys("1234567890");
 		submitRegisterButton.click();
 	}
-	
-	
-	
-	
-	
-	
-
 }
