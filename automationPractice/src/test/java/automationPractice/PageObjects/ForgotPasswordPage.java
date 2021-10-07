@@ -15,12 +15,12 @@ public class ForgotPasswordPage extends PageObject {
 	private WebElement email;
 	@FindBy(how=How.XPATH, using="//span[text()='Retrieve Password']")
 	private WebElement retrievePassword;
-	private String textScript = "return document.evaluate(\"*[@id='center_column']/div/p/following-sibling::text()[1]\" ,document, null, XPathResult.STRING_TYPE, null).stringValue;";
-
-	
+	@FindBy(how=How.CSS, using="p.alert-success")
+	private WebElement successMessage;
+		
 	public ForgotPasswordPage(WebDriver driver, String baseUrl) {
 		super(driver, baseUrl);
-		
+
 	}
 
 	public ForgotPasswordPage clickRetrievePassword() {
@@ -33,9 +33,7 @@ public class ForgotPasswordPage extends PageObject {
 	}
 	
 	public String getMessage() {
-		String message = (String)super.executeJavascript(textScript, null);
-		
+		String message = successMessage.getText();
 		return message.trim();
 	}
-
 }
