@@ -12,9 +12,10 @@ public class LoginTest {
 	public void canLoginTest() {
 		
 		String projectPath = System.getProperty("user.dir");		
-		System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/chromedriver");	
-		System.setProperty("webdriver.edge.driver", projectPath + "/src/test/resources/msedgedriver");
-		
+		System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/mac/chromedriver");	
+		System.setProperty("webdriver.edge.driver", projectPath + "/src/test/resources/mac/msedgedriver");
+		System.setProperty("webdriver.safari.driver", projectPath + "/src/test/resources/mac/msedgedriver");
+
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com");
