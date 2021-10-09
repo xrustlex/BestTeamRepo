@@ -1,0 +1,32 @@
+BEST Team Sprint 2 RETROSPECTIVE
+
+VELOCITY COMPARISION:
+
+SPRINT 1 80/224
+SPRINT 2 131/144
+
+
+Went well:
+
+	- teamwork;
+	- velocity;
+	- test case completions;
+
+To be improved:
+
+	- cross platform testing capabilities;
+	- VELOCITY INCREASE;
+	- scale;
+	
+	Action items: adding another abstraction level;
+	REMEDY: ENABLE CROSS PLATFORM TESTING 
+	ACTION ITEM: INCREASE VELOCITY
+	REMEDY: CODE MORE, TEST MORE, AUTOMATE MORE
+	ACTION ITEM: AUTOMATE MORE
+	REMEDY: AUTOMATE MORE TEST CASES, IMPROVE AUTOMATING SKILLS
+
+Blockers:
+
+	- Jenkins on windows;
+	- Git staging conflicts;
+	
