@@ -2,8 +2,9 @@ package automationPractice;
 
 import static org.junit.Assert.*;
 
-import org.junit.Test;
+
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
 
 public class SimpleRegistrationTest extends automationPracticeTestBase {
 
