@@ -2,11 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Testing Automation Practice project">
 	<test name="Automation">
-		<classes>
-			<class name="automationPractice.HappyPathLoginTest" />
-			<class name="automationPractice.NegativePathLoginTest" />
-			<class name="automationPractice.PasswordResetTest" />
-			<class name="automationPractice.SimpleRegistrationTest" />
-		</classes>
+		<packages>
+			<package name=".*" />
+		</packages>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
