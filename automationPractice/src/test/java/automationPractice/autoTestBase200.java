@@ -15,7 +15,7 @@ public abstract class autoTestBase200 {
 	String projectPath = System.getProperty("user.dir");	
 	
 	public WebDriver driver;
-	protected String baseUrl; // = "http://automationpractice.com";
+	protected String baseUrl = "http://automationpractice.com";
 	
 	protected autoTestBase200(String baseUrl) {
 		this.baseUrl = baseUrl;
@@ -27,6 +27,6 @@ public abstract class autoTestBase200 {
 		this.driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.navigate().to(this.baseUrl);		
+		driver.navigate().to(this.baseUrl);	
 	}
 }
