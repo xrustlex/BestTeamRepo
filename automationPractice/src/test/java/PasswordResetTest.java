@@ -4,7 +4,7 @@ import static org.testng.AssertJUnit.assertEquals;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 
-import automationPractice.PageObjects.AutheticationPage_Z;
+//import automationPractice.PageObjects.AutheticationPage_Z;
 
 public class PasswordResetTest extends framework.autoTestbase{
        static  String baseUrl ="http://automationpractice.com/index.php?controller=authentication&back=my-account";
