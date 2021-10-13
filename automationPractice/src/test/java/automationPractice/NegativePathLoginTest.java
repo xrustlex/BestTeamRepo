@@ -1,5 +1,7 @@
 package automationPractice;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -31,7 +33,7 @@ public class NegativePathLoginTest {
 		WebElement passwordBox = driver.findElement(By.cssSelector("input#passwd"));
 		//passwordBox.sendKeys(testPaswd);
 		passwordBox.sendKeys(Keys.ENTER);
-		Assert.assertEquals(driver.getCurrentUrl(), "http://automationpractice.com/index.php?controller=authentication");
+		AssertJUnit.assertEquals(driver.getCurrentUrl(), "http://automationpractice.com/index.php?controller=authentication");
 		driver.close();
 		
 	}

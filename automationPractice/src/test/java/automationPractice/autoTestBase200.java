@@ -1,8 +1,8 @@
 package automationPractice;
 
+import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -20,7 +20,7 @@ public abstract class autoTestBase200 {
 		this.baseUrl = baseUrl;
 	}
 	
-	@Before
+	@BeforeMethod
 	public void setup(){
 		System.setProperty(WEB_DRIVER_SYSTEM_PROPERTY, projectPath + chromeDriverPath);
 		this.driver = new ChromeDriver();

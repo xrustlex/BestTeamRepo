@@ -1,6 +1,7 @@
 package automationPractice;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 public class SimpleRegistrationTest extends automationPracticeTestBase {
 
