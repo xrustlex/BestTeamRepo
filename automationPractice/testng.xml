@@ -5,8 +5,6 @@
 		<classes>
 
 			<class name="HappyPathLoginTest" />
-			<class name="NegativePathLoginTest" />
-			<class name="RegistrationTest" />
 
 		</classes>
 	</test> <!-- Test -->
