@@ -20,7 +20,11 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<properties>
+		<src.dir>src/test/java/automationPractice</src.dir>
+	</properties>
 	<build>
+		<sourceDirectory>${src.dir}</sourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
