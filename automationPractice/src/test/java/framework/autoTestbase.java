@@ -1,4 +1,4 @@
-package automationPractice.framework;
+package framework;
 
 import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;

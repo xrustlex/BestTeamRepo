@@ -1,13 +1,12 @@
-package automationPractice;
+
 
 import static org.testng.AssertJUnit.assertEquals;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 
 import automationPractice.PageObjects.AutheticationPage_Z;
-import automationPractice.framework.autoTestbase;
 
-public class PasswordResetTest extends autoTestbase{
+public class PasswordResetTest extends framework.autoTestbase{
        static  String baseUrl ="http://automationpractice.com/index.php?controller=authentication&back=my-account";
 	public PasswordResetTest() {
 		super(baseUrl);

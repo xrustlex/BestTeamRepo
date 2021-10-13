@@ -1,4 +1,4 @@
-package automationPractice;
+
 
 
 import org.testng.annotations.Test;
