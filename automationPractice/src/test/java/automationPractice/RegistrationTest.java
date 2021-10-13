@@ -6,16 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.testng.annotations.Test;
 
 public class RegistrationTest {
 	
 	@Test
 	public void registerForAutomationPractice() {
-		String testEmail = "alexanderjosh009@gmail.com";
-		String testPaswd = "monster90";
 		String projectPath = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/mac/chromedriver");
 		
